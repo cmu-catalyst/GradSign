@@ -6,8 +6,9 @@ Clone and follow the installation steps in [zero-cost-nas](https://github.com/Sa
 command in the cmd: 
 
 ```
-cp experiments/zero-cost-nas-code/*.py zero-cost-nas/
-cp -r experiments/zero-cost-nas-code/foresight/pruners zero-cost-nas/foresight
+cp zero-cost-nas-code/*.py zero-cost-nas/
+cp -r zero-cost-nas-code/foresight/pruners zero-cost-nas/foresight
+cd zero-cost-nas/
 python build.py
 python gs.py
 
@@ -20,7 +21,8 @@ Clone and follow the installation steps in [NASWOT](https://github.com/BayesWatc
 command in the cmd: 
 
 ```
-cp experiments/naswot/*.py naswot/
+cp naswot-code/*.py naswot/
+cd naswot
 python gradsign.py
 ```
 Modify `args` to test for different datasets.
@@ -38,7 +40,7 @@ Clone and follow the installation steps in [AutoDL](https://github.com/D-X-Y/Aut
 command in the cmd: 
 ```
 # Replace exps/NAS-Bench-201-algos/*.py with ours
-cp experiments/autodl/*.py AutoDL-Projects/exps/NAS-Bench-201-algos/
+cp autodl/*.py AutoDL-Projects/exps/NAS-Bench-201-algos/
 ```
 Then simply run the command listed in [here](https://github.com/D-X-Y/AutoDL-Projects/blob/main/docs/NAS-Bench-201.md). The `GsApi` is built in the `zero-cost-nas` step and could be directly linked by changing
 `gs_root`.
