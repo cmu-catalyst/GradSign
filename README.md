@@ -1,5 +1,5 @@
 # GradSign
-Code for paper GradSign: Model Performance Inference with Theoretical Insights
+Code for paper [GradSign: Model Performance Inference with Theoretical Insights](https://openreview.net/pdf?id=HObMhrCeAAF)
 
 ### Spearman's rho experiments:
 Clone and follow the installation steps in [zero-cost-nas](https://github.com/SamsungLabs/zero-cost-nas). Then type the following
